@@ -5,7 +5,7 @@ export default function TodoList() {
   const { todos, handleToggleTodo, handleDeleteTodo } = useTodosContext();
 
   return (
-    <ul>
+    <ul className="overflow-y-scroll">
       {todos.length === 0 && (
         <li className="h-full flex justify-center items-center font-semibold">
           Start by adding a todo
